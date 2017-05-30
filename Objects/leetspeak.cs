@@ -12,7 +12,13 @@ namespace LeetSpeakTest
     public char[] Translate(string userInput)
     {
       char[] array = userInput.ToCharArray();
-      //string result = string.Join("", array);
+      for (int i = 0; i < array.Length; i++)
+      {
+         if(array[i] == 'e')
+        {
+           array[i]='3';
+        }
+      }
       return array;
     }
   }
