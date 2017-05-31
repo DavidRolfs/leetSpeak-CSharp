@@ -22,9 +22,25 @@ namespace LeetSpeak.Objects
     public void Translate_forCharacterE_replaceWith3()
     {
       LeetSpeakTranslator testLeetSpeak = new LeetSpeakTranslator();
-      char[] expected = {'h','3','l','l','o'};
+      char[] expected = {'3', '3'};
 
-      Assert.Equal(expected, testLeetSpeak.Translate("hello"));
+      Assert.Equal(expected, testLeetSpeak.Translate("eE"));
+    }
+    [Fact]
+    public void Translate_forCharacterO_replaceWith0()
+    {
+      LeetSpeakTranslator testLeetSpeak = new LeetSpeakTranslator();
+      char[] expected = {'0', '0'};
+
+      Assert.Equal(expected, testLeetSpeak.Translate("oO"));
+    }
+    [Fact]
+    public void Translate_forAllCharactersToBeReplaced_returnReplacement()
+    {
+      LeetSpeakTranslator testLeetSpeak = new LeetSpeakTranslator();
+      char[] expected = {'3', '0'};
+
+      Assert.Equal(expected, testLeetSpeak.Translate("eo"));
     }
   }
 }
