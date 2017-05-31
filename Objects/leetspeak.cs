@@ -1,9 +1,9 @@
 using Nancy;
 using System.Collections.Generic;
 using System.Diagnostics;
-using LeetSpeak.Objects;
+using LeetSpeakTest;
 
-namespace LeetSpeakTest
+namespace LeetSpeak.Objects
 {
   public class LeetSpeakTranslator
   {

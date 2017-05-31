@@ -1,9 +1,9 @@
 using Xunit;
 using System;
 using System.Collections.Generic;
-using LeetSpeakTest;
+using LeetSpeak.Objects;
 
-namespace LeetSpeak.Objects
+namespace LeetSpeakTest
 {
   public class LeetSpeakTest
   {
