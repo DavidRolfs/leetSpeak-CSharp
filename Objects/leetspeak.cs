@@ -16,11 +16,15 @@ namespace LeetSpeakTest
       {
          if(array[i] == 'e' || array[i] == 'E')
         {
-           array[i]='3';
+           array[i] = '3';
         }
         else if(array[i] == 'o' || array[i] == 'O')
         {
-          array[i]='0';
+          array[i] = '0';
+        }
+        else if(array[i] == 'I')
+        {
+          array[i] = '1';
         }
       }
       return array;

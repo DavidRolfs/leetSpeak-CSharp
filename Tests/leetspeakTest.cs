@@ -35,12 +35,20 @@ namespace LeetSpeak.Objects
       Assert.Equal(expected, testLeetSpeak.Translate("oO"));
     }
     [Fact]
+    public void Translate_forCharacterI_replacewith1()
+    {
+      LeetSpeakTranslator testLeetSpeak = new LeetSpeakTranslator();
+      char[] expected = {'1'};
+
+      Assert.Equal(expected, testLeetSpeak.Translate("I"));
+    }
+    [Fact]
     public void Translate_forAllCharactersToBeReplaced_returnReplacement()
     {
       LeetSpeakTranslator testLeetSpeak = new LeetSpeakTranslator();
-      char[] expected = {'3', '0'};
+      char[] expected = {'3', '0', '1'};
 
-      Assert.Equal(expected, testLeetSpeak.Translate("eo"));
+      Assert.Equal(expected, testLeetSpeak.Translate("eoI"));
     }
   }
 }
