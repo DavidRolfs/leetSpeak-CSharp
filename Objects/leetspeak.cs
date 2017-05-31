@@ -9,7 +9,7 @@ namespace LeetSpeakTest
   {
     private static List<char> _letters = new List<char>{};
 
-    public char[] Translate(string userInput)
+    public string Translate(string userInput)
     {
       char[] array = userInput.ToCharArray();
       for (int i = 0; i < array.Length; i++)
@@ -30,8 +30,10 @@ namespace LeetSpeakTest
         {
           array[i] = '7';
         }
+        _letters.Add(array[i]);
       }
-      return array;
+      string result = string.Join("", _letters.ToArray());
+      return result;
     }
   }
 }
