@@ -13,6 +13,7 @@ namespace LeetSpeak.Objects
         return View["index.cshtml"];
       };
       Post["/result"] = _ =>{
+        LeetSpeakTranslator.DeleteAll();
         LeetSpeakTranslator newLeet = new LeetSpeakTranslator();
         string result = newLeet.Translate(Request.Form["new-word"]);
         return View["results.cshtml", result];

@@ -35,5 +35,9 @@ namespace LeetSpeak.Objects
       string result = string.Join("", _letters.ToArray());
       return result;
     }
+    public static void DeleteAll()
+    {
+      _letters.Clear();
+    }
   }
 }
