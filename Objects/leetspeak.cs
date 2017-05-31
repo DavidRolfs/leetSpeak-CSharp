@@ -26,6 +26,10 @@ namespace LeetSpeakTest
         {
           array[i] = '1';
         }
+        else if(array[i] == 't' || array[i] == 'T')
+        {
+          array[i] = '7';
+        }
       }
       return array;
     }
